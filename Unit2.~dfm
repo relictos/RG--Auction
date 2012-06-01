@@ -1,0 +1,55 @@
+object Form2: TForm2
+  Left = 672
+  Top = 286
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsSingle
+  Caption = 'o'
+  ClientHeight = 111
+  ClientWidth = 144
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -10
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  Visible = True
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Elogin: TEdit
+    Left = 13
+    Top = 13
+    Width = 124
+    Height = 21
+    TabOrder = 0
+    Text = 'TEST'
+  end
+  object Epass: TEdit
+    Left = 13
+    Top = 33
+    Width = 124
+    Height = 21
+    PasswordChar = '*'
+    TabOrder = 1
+    Text = 'test'
+  end
+  object BConnect: TButton
+    Left = 13
+    Top = 80
+    Width = 122
+    Height = 25
+    Caption = 'BConnect'
+    TabOrder = 2
+    OnClick = BConnectClick
+  end
+  object CBRealm: TComboBox
+    Left = 13
+    Top = 56
+    Width = 124
+    Height = 21
+    Style = csDropDownList
+    ItemHeight = 13
+    TabOrder = 3
+  end
+end
